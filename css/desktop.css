@@ -1,0 +1,358 @@
+/* Font */
+
+@font-face {
+  font-family: 'EurostileCandyLTPro-Bold';
+  src: url('fonts/EurostileCandyLTPro-Bold.eot') format('embedded-opentype'),
+       url('fonts/EurostileCandyLTPro-Bold.woff') format('woff'),
+       url('fonts/EurostileCandyLTPro-Bold.ttf') format('truetype'),
+}
+
+/* this is so there's no scrollbar or white space */
+
+html, div{
+  font-family: 'EurostileCandyLTPro-Bold';
+  height: 100%;
+  margin: 0;
+}
+body{
+  overflow: hidden !important;
+  margin: 0;
+}
+canvas{
+  overflow: hidden !important;
+  display: block;
+}
+#container{
+  overflow: hidden !important;
+
+}
+
+/* Title of Work (Upright) */
+
+#worktitle{
+  position: absolute;
+  padding: 25px;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+.workfont{
+  text-align: right;
+  font-size: 17px;
+  line-height: 18px;
+  color: white;
+}
+
+/* Bottom Parent */
+
+#ultimate{
+  position: absolute;
+  height:auto;
+  width: 100%;
+  bottom: 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  transition: all 0.2s ease-out;
+
+}
+#left-wrapper{
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background-color: #58ad48;
+  height: 90px;
+  width: auto;
+  transition: all 0.2s ease-out;
+}
+#right-wrapper{
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  background-color: transparent;
+  height: 90px;
+  flex-grow: 1;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+@media screen and (max-width: 768px){
+  #ultimate{
+    position: absolute;
+    bottom: 0 !important;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height:180px;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-out;
+
+  }
+  #left-wrapper{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #58ad48;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    transition: all 0.2s ease-out;
+
+  }
+  #right-wrapper{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    background-color: transparent;
+    height: 90px;
+    overflow: hidden;
+    float: left;
+    transition: all 0.2s ease-out;
+
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 619px){
+  #left-wrapper{
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #58ad48;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    transition: all 0.2s ease-out;
+
+  }
+}
+
+/* Global Params */
+
+.logoscale{
+  height: 100%;
+}
+
+/* Logo */
+
+#logo{
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 23px;
+  height: 51px;
+}
+#logo-small{
+  display: none;
+}
+#logo-tiny{
+  position: relative;
+  display: none;
+  padding: 25px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 20px;
+}
+.terrell{
+  fill: #efdd3b;
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px){
+  #logo{
+    display: none;
+
+  }
+  #logo-small{
+    display: block;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 23px;
+    height: 51px;
+  }
+  #logo-tiny{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 619px){
+  #logo-small{
+    display: block;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 23px;
+    height: 51px;
+  }
+  #logo-tiny{
+    display: none;
+  }
+  #logo{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width:399px){
+  #logo{
+    display: none;
+  }
+  #logo-small{
+    display: none;
+  }
+  #logo-tiny{
+    display: block;
+    position: absolute;
+    padding: 25px;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 34px;
+  }
+}
+
+
+/* Navigator */
+
+#navi{
+  max-width:260px;
+  display: inline-block;
+  padding-top: 20px;
+  padding-right: 88px;
+  overflow: visible;
+  transition: all 0.2s ease-out;
+
+}
+#navi li{
+  float:left;
+  display:inline;
+  font-size: 29.5px;
+  line-height: 30px;
+}
+#navi ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  margin: 0;
+  padding: 0;
+}
+#navi a:hover, a:visited, a:link, a:active{
+  text-decoration: none;
+  color: #efdd3b;
+}
+#navi p{
+  margin: 0;
+  padding: 0;
+  color: #efdd3b;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 400px) and (max-width: 619px){
+  #navi{
+    max-width:260px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 68px;
+    overflow: visible;
+    transition: all 0.2s ease-out;
+
+  }
+  #navi li{
+    float:left;
+    display:inline;
+    font-size: 26.5px;
+    line-height: 30px;
+  }
+  #navi p{
+    margin: 0;
+    padding: 0;
+    color: #efdd3b;
+    letter-spacing: 1px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width:399px){
+  #navi{
+    max-width:260px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 70px;
+    overflow: visible;
+    transition: all 0.2s ease-out;
+
+  }
+}
+@media screen and (min-width: 0px) and (max-width:320px){
+  #navi{
+    max-width:230px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-right: 50px;
+    overflow: visible;
+    transition: all 0.2s ease-out;
+
+  }
+  #navi li{
+    float:left;
+    display:inline;
+    font-size: 23.5px;
+    line-height: 30px;
+  }
+  #navi p{
+    margin: 0;
+    padding: 0;
+    color: #efdd3b;
+    letter-spacing: 1px;
+  }
+}
+
+/* Pink Info Box */
+
+#pinktwitbox{
+  background-color: #e9adce;
+  padding: 20px;
+  height: 51px;
+  width: 51px;
+  overflow: visible;
+}
+.cls-1{
+  fill: #cd484f !important;
+}
+
+/* Marquee */
+
+.marquee3k{
+  padding-top: 25px;
+  background-color: #cd484f;
+  overflow: hidden !important;
+}
+.marquee3k__copy {
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+span {
+  margin-top: 25px;
+  margin-left: 20px;
+  color: #e9adce;
+  font-size: 40px;
+}
+
+/* Transparent Text Selection */
+
+::selection {
+  background: rgba(0, 0, 0, 0); /* WebKit/Blink Browsers */
+}

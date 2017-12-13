@@ -1,0 +1,129 @@
+@font-face {
+  font-family: 'EurostileCandyLTPro-Bold';
+  src: url('fonts/EurostileCandyLTPro-Bold.eot') format('embedded-opentype'),
+       url('fonts/EurostileCandyLTPro-Bold.woff') format('woff'),
+       url('fonts/EurostileCandyLTPro-Bold.ttf') format('truetype'),
+}
+
+/* this is so there's no scrollbar or white space */
+html, div{
+  font-family: 'EurostileCandyLTPro-Bold';
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #c9c74c;
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width:100%;
+  max-height:100%;
+}
+::selection {
+  background: rgba(205, 72, 79, 0.4); /* WebKit/Blink Browsers */
+  opacity: 0.2;
+}
+
+
+.close-button {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: #097b99;
+  border-radius: 100%;
+  margin-left: 1.5%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  line-height: 50px;
+  display: inline-block;
+}
+.close-button:before,
+.close-button:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 52%;
+  left: 64.5%;
+  margin-top: -5px;
+  margin-left: -25px;
+  display: block;
+  height: 7px;
+  width: 35px;
+  background-color: #c9c74c;
+  transition: all 0.2s ease-out;
+}
+.close-button:after {
+  transform: rotate(45deg);
+}
+#container{
+  width: 85%;
+  height:auto;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+  transition: all 0.2s ease-out;
+}
+.centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+#container h1{
+  display: inline;
+  color: #fff;
+  margin: 0;
+  padding-right: 15px;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 18px;
+}
+#container h2{
+  display: inline;
+  padding-top: 5px;
+  color: #097b99;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+  line-height: 18px;
+  hyphens: auto;
+  overflow-wrap: normal;
+}
+#container a:visited, a:link, a:active{
+  color: #067b99;
+  text-decoration: none;
+}
+#container a:hover{
+  color: #58ad4a;
+  transition: all 0.09s ease-in;
+  text-decoration: none;
+
+}
+.carousel{
+  height: 500px;
+}
+.carousel img{
+  display: block;
+}
+.carousel-cell {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-container{
+  width: auto;
+  height: auto;
+  padding-bottom: 25px;
+}
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
