@@ -1,0 +1,47 @@
+html, body{
+  overflow: hidden;
+  margin: 0;
+}
+
+.preloader{
+  overflow: hidden;
+  margin: 0;
+}
+
+/* flexbox wraps logos */
+main {
+  position: relative;
+  width: 150%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  overflow: hidden;
+  z-index: 5;
+}
+
+main svg {
+  width: 100px;
+  height: 100px;
+  padding: 15px;/* 1/4 width of screen */
+
+}
+/* 2k screen resolution */
+@media screen and (min-width: 2000px){
+  main svg {
+    width: 500px;
+    height: 500px;
+    padding: 70px;/* 1/4 width of screen */
+
+  }
+}
+
+/* 4k screen resolution + retina */
+@media screen and (min-width: 4000px){
+  main svg {
+    width: 800px;
+    height: 800px;
+    padding: 120px;/* 1/4 width of screen */
+
+  }
+}

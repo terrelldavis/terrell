@@ -127,7 +127,6 @@ function onDocumentMouseUp(event) {
 }
 
 
-
 function animate() {
 
 	requestAnimationFrame(animate);
@@ -136,6 +135,10 @@ function animate() {
 }
 
 function update() {
+
+	if (isUserInteracting === false) {
+		lon += 0.05;
+	}
 
 	lat = Math.max(-65, Math.min(65, lat));
 	phi = THREE.Math.degToRad(90 - lat);
