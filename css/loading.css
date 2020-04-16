@@ -1,0 +1,29 @@
+html, body{
+  overflow: hidden;
+  margin: 0;
+}
+
+/* reset styles on all elements */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* flexbox wraps logos */
+main {
+  position: relative;
+  width: 150%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+main svg {
+  width: 200px;
+  height: 200px;
+  padding: 30px;/* 1/4 width of screen */
+
+}
